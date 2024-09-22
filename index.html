@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>أبو هائل لصيانة المحركات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="hero">
+        <h1 class="bgc">أبو هائل لصيانة المحركات </h1>
+        <p class="bgc">أفضل خدمات الصيانة ولف المحركات</p>
+        <a href="#gallery2" class="btn bgc btn2">إظهار القطع المتوفرة</a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" dir="rtl">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">أبو هائل</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">نبذة عني</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">المعرض</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery2">القطع المتوفرة للبيع</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">الاتصال</a>
+                    </li>
+                </ul>
+                <form class="d-flex" onsubmit="searchWord(event)">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="about">
+        <h1 dir="rtl" style="font-weight: bolder;">نبذة عني</h1><br>
+        <p id="prgraph" dir="rtl">
+            أمتلك خبرة تتجاوز 15 عامًا في مجال صيانة ولف المحركات الكهربائية. على مر السنوات، طورت مهارات متقدمة في
+            تشخيص أعطال المحركات الكهربائية بمختلف أنواعها وأحجامها، والعمل على صيانتها بأعلى مستويات الجودة والكفاءة.
+            أجيد لف المحركات الكهربائية بدقة واحترافية، مع الحرص دائمًا على استخدام أفضل المواد والتقنيات لضمان الأداء
+            الأمثل والاستمرارية. التزامي بالدقة في العمل وتسليم المهام في الوقت المحدد يميزني، وأعمل باستمرار على تطوير
+            مهاراتي لضمان تقديم أفضل النتائج في كل مشروع أشارك فيه
+        </p><br>
+        <img id="profile" src="me.png" alt="ابو هائل">
+    </section>
+
+    <section id="services" class="services" dir="rtl">
+        <h2>الخدمات</h2>
+        <button id="toggleServices">إظهار/إخفاء الخدمات</button>
+        <ul id="servicesList">
+            <li>لف حميع انواع المحركات</li>
+            <li>صيانة كاملة لجميع المحركات</li>
+            <li>قطع تبديل</li>
+            <li>بيع محركات جديد - مستعمل</li>
+        </ul>
+    </section>
+
+
+    <section id="gallery" class="gallery" dir="rtl">
+        <h2>المعرض</h2>
+        <br>
+        <div class="gallery-grid">
+            <img src="سنطرفيش.jpeg" alt="قبل وبعد" style="margin-right: 50px;">
+            <img src="غسالة.jpg" alt="قبل وبعد" style="margin-right: 100px;" > <br>
+            <img src="صاروخ.jpg" alt="صالون الحلاقة" style="margin-right: 50px;">
+            <img src="مثقب.webp" alt="صالون الحلاقة" style="margin-right: 100px;" >
+        </div>
+    </section>
+
+
+
+        <section id="gallery2" class="gallery">
+            <h2 class="text-center my-4">للبيع</h2>
+            <div class="row">
+                <!-- بطاقة سنطرفيش -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="سنطرفيش.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">سنطرفيش صيني</h5>
+                            <div class="card shadow-lg">
+                                <div class="card-header bg-primary text-white">
+                                    <h3 class="card-title text-center">فوائد محرك سنطرفيش الصيني</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong>الكفاءة العالية:</strong> يعمل هذا المحرك بفعالية في ضخ كميات كبيرة
+                                            من المياه بسرعة عالية، ما يجعله مثاليًا للاستخدام في الري الزراعي والمنشآت
+                                            الصناعية.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>التكلفة الاقتصادية:</strong> غالبًا ما تكون هذه المضخات منخفضة
+                                            التكلفة نسبيًا مقارنة بالمضخات الأخرى.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>الصيانة السهلة:</strong> تمتاز المضخات الصينية بتصميم بسيط يسهل
+                                            صيانتها.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>التنوع في الاستخدامات:</strong> يمكن استخدامها في مجموعة واسعة من
+                                            التطبيقات مثل الري وإمدادات المياه.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>متانة:</strong> محركات "سنطرفيش" عادة ما تكون متينة وتتحمل الاستخدام
+                                            الشاق لفترات طويلة.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/905352159256" class="btn btn-primary mt-3">حجز عبر وتساب</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة غسالة -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="غسالة.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">غسالة حوضين</h5>
+                            <div class="card shadow-lg">
+                                <div class="card-header bg-success text-white">
+                                    <h3 class="card-title text-center">فوائد الغسالة ذات الحوضين</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong>الكفاءة في استهلاك الماء والكهرباء:</strong> تستهلك كميات أقل من
+                                            الماء والكهرباء مقارنة بالغسالات الأوتوماتيكية.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>سرعة الغسيل:</strong> يمكنك غسل وتجفيف الملابس في وقت واحد، مما يوفر
+                                            الوقت.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>القدرة على التحكم اليدوي:</strong> توفر تحكمًا أكبر في عملية الغسيل.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>القدرة على الغسل والتجفيف بشكل منفصل:</strong> مزودة بحوضين منفصلين
+                                            للغسيل والتجفيف.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>متانة وسهولة الصيانة:</strong> تتميز ببساطة التصميم مما يجعل صيانتها
+                                            سهلة وغير مكلفة.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/905352159256" class="btn btn-primary mt-3">حجز عبر وتساب</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بطاقة صاروخ جلخ -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="صاروخ.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">صاروخ جلخ</h5>
+                            <div class="card shadow-lg">
+                                <div class="card-header bg-danger text-white">
+                                    <h3 class="card-title text-center">فوائد صاروخ قطع الحديد</h3>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong>القدرة العالية على القطع:</strong> يتميز بقدرته على قطع المعادن
+                                            القوية والدقيقة بسرعة وكفاءة عالية.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>تعدد الاستخدامات:</strong> يمكن استخدامه في قطع الحديد ومواد أخرى
+                                            مثل الفولاذ والحجر.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>الدقة في العمل:</strong> يوفر تحكمًا عاليًا للمستخدم مما يساعد على
+                                            قطع المعادن بدقة.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>السرعة والكفاءة:</strong> ينجز العمل بسرعة مقارنة بالطرق التقليدية
+                                            الأخرى لقطع المعادن.
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>سهولة الاستخدام والنقل:</strong> غالبًا ما يكون خفيف الوزن وقابل
+                                            للحمل.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/905352159256" class="btn btn-primary mt-3">حجز عبر وتساب</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="gallery">
+        <div class="contact-info" id="contact">
+            <div class="contact-item">
+                <i class="fab fa-whatsapp" style="color: green;"></i>
+                <a href="https://wa.me/905352159256" target="_blank">+90 535 215 9256</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                <span>كنصفرة الجديدة / أول مفرق في المخيم من جهة الشرق</span>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- <section  class="contact">
+            <h2>الاتصال</h2>
+            <p>رقم الهاتف:00905349670137</p>
+            <p>البريد الإلكتروني: barber@example.com</p>
+            <form id="contactForm">
+                <input type="text" id="fullName" placeholder="الاسم الكامل" required>
+                <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+                <textarea id="message" placeholder="رسالتك" required></textarea>
+                <button type="submit">إرسال</button>
+                <p id="error-message" style="color: red;"></p>
+            </form>
+
+        </section> -->
+
+        <footer>
+            <p>جميع الحقوق محفوظة لدى محمد نعسان نجار © 2024</p>
+        </footer>
+
+        <script src="scripts.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+img{
+    padding-left: 30px;
+}
+header.hero {
+    background-image: url('مثقاب.png');
+    color: rgb(13, 1, 1);
+    text-align: center;
+    padding: 50px;
+}
+#yyyy{
+    color: rgb(0, 0, 255);
+    font-size: xx-large;
+}
+header.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+#profile{
+    width: 25em;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services li {
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: 25px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.highlight {
+    background-color: yellow;
+}
+.bgc{
+    margin: 20px 10px 20px 10px;
+    background-color:rgba(46, 247, 11, 0.65);
+}
+
+.btn2{
+    background-color: rgba(47, 0, 255,0.93);
+    border-radius: 35px;
+    width: 200px;
+    font-weight: bolder;
+    font-size:larger;
+}
+#prgraph{
+    text-align: justify;
+}
